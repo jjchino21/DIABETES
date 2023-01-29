@@ -1,0 +1,145 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local antilock = Instance.new("TextButton")
+local lock = Instance.new("TextButton")
+local antilock_2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Frame.Position = UDim2.new(0.175334319, 0, 0.111111104, 0)
+Frame.Size = UDim2.new(0, 873, 0, 630)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+antilock.Name = "anti lock"
+antilock.Parent = Frame
+antilock.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+antilock.BorderSizePixel = 6
+antilock.Position = UDim2.new(0.76632303, 0, 0.0793650821, 0)
+antilock.Size = UDim2.new(0, 166, 0, 529)
+antilock.Font = Enum.Font.SourceSans
+antilock.Text = "anti lock"
+antilock.TextColor3 = Color3.fromRGB(0, 0, 0)
+antilock.TextScaled = true
+antilock.TextSize = 14.000
+antilock.TextWrapped = true
+antilock.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/chrsschrs/antilocks/main/aa"))()
+end)
+
+lock.Name = "lock"
+lock.Parent = Frame
+lock.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+lock.BorderSizePixel = 6
+lock.Position = UDim2.new(0.0526918694, 0, 0.0793650746, 0)
+lock.Size = UDim2.new(0, 355, 0, 529)
+lock.Font = Enum.Font.SourceSans
+lock.Text = "lock"
+lock.TextColor3 = Color3.fromRGB(0, 0, 0)
+lock.TextScaled = true
+lock.TextSize = 14.000
+lock.TextWrapped = true
+lock.MouseButton1Down:connect(function()
+	-- sub to NAT gaming--
+
+	_G.TargetAim = {
+		["Key"] = "q",
+		["Mode"] = "Toggle", -- "Toggle" or "Hold"
+		["Prediction"] = 0.12118, -- Lower if Lower Ping, Higher if Higher Ping
+		["Auto-Prediction"] = true,
+		["Aimpart"] = "HumanoidRootPart",
+		["Face-Target"] = false,
+		["Notif-Toggle"] = true,
+		["Chat-Toggle"] = false,
+		["View-Toggle"] = false,
+		["Resolver-V1"] = false,
+		["Resolver-Delay"] = 0.195,
+		["Resolver-Aimpart"] = "HumanoidRootPart",
+		["Resolver-AntiSky"] = true,
+		["Resolver-AntiGround"] = true,
+		["Resolver-Reverse"] = false,
+		["Orbit-Toggle"] = false,
+		["Orbit-Speed"] = 8,
+		["Orbit-Size"] = 8,
+		["Orbit-Height"] = 0, -- No Negatives
+		["Vertical-Velocity-Toggle"] = false,
+		["Vertical-Velocity"] = 0,
+		["Horizontal-Velocity-Toggle"] = false,
+		["Horizontal-Velocity"] = 0,
+		["Onshot-Visual"] = true,
+		["Onshot-Visual-Color"] = Color3.fromRGB(119,0,255),
+		["Onshot-Visual-Material"] = "Neon", -- "Plastic", "ForceField", "Neon"
+		["Onshot-Visual-Life"] = 10, -- Seconds
+		["Onshot-Sound"] = true,
+		["Onshot-Sound-Sounda"] = 12413331,
+		["Check-For-Part"] = "HumanoidRootPart",
+		["FOV-Check"] = false,
+		["FOV-Check-Color"] = Color3.fromRGB(119,0,255),
+		["FOV-Size"] = 100,
+		["Circle-Thickness"] = 2, 
+		["Filled-Circle"] = false,
+		["Circle-Transparency"] = 1, --Invisible
+		["Visible-Check"] = false,
+		["Down-Check"] = true, -- For Hood Customs and Untitled Hood
+		["Dot"] = true,
+		["Dot-Color"] = Color3.fromRGB(119,0,255),
+		["Tracer"] = true,
+		["Tracer-Color"] = Color3.fromRGB(119,0,255),
+		["Highlight"] = true,
+		["Highlight-Color"] = Color3.fromRGB(119,0,255),
+	}
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/Standalones/SilentAim", true))()
+end)
+
+antilock_2.Name = "anti lock"
+antilock_2.Parent = Frame
+antilock_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+antilock_2.BorderSizePixel = 6
+antilock_2.Position = UDim2.new(0.549828172, 0, 0.0793650821, 0)
+antilock_2.Size = UDim2.new(0, 183, 0, 529)
+antilock_2.Font = Enum.Font.SourceSans
+antilock_2.Text = "anti lock"
+antilock_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+antilock_2.TextScaled = true
+antilock_2.TextSize = 14.000
+antilock_2.TextWrapped = true
+antilock.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/chrsschrs/antilock/main/chrss"))()
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0985108837, 0, 0.0111111114, 0)
+TextLabel.Size = UDim2.new(0, 701, 0, 33)
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "DIABETES"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function DZXHT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(5)
+	script.Parent.Visible = false
+	
+end
+coroutine.wrap(DZXHT_fake_script)()
